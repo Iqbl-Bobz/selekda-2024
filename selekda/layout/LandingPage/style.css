@@ -1,0 +1,300 @@
+/* DECLARE */
+body,
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Font-primary);
+  font-family: var(--Font-weight);
+  scroll-behavior: smooth;
+}
+/* DECLARE */
+
+body {
+  height: 2000px;
+  width: 100%;
+}
+
+/* INI VARIABLE CSS */
+:root {
+  --color-black: #000;
+  --color-gray: #3333;
+  --color-keputihan: #eaeaea;
+  --Font-primary: Arial, sans-serif;
+  --Font-weight: 650;
+}
+/* INI VARIABLE CSS */
+
+/* STYLE BAGIAN HEADER or NAV */
+nav {
+  background-color: var(--color-gray);
+  max-height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 80px;
+}
+
+nav .logo {
+  width: 120px;
+  height: 85px;
+}
+
+nav .ulNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -125px;
+  margin-left: -130px;
+}
+
+nav .ulNavbar .liNavbar {
+  /* border: 2px solid green; */
+  list-style-type: none;
+  padding: 1rem;
+  margin: 3rem;
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+ 
+}
+
+nav .ulNavbar .liNavbar a {
+  position: absolute;
+  color: var(--color-black);
+  cursor: pointer;
+  z-index: 9999;
+  text-decoration: none;
+  mix-blend-mode: difference;
+}
+
+nav .iconss {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  height: 80px;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+
+nav .icon {
+  text-decoration: none;
+  color: var(--color-black);
+  margin-right: 30px;
+}
+
+nav .iconSosmed {
+  /* border: 2px solid red; */
+  width: 190px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+nav a #iconX {
+  text-decoration: none;
+  color: var(--color-black);
+  padding: 0;
+  position: absolute;
+  top: 19px;
+  right: -20px;
+  /* border: 2px solid black; */
+}
+
+#hamburger-menu {
+  color: var(--color-black);
+  display: none;
+}
+
+.iconss .iconSosmed {
+  color: #fff;
+  font-style: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  font-style: none;
+}
+
+.iconss .iconSosmed a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.iconss .iconSosmed a:hover {
+  color: var(--primary);
+}
+
+/* STYLE BAGIAN HEADER or NAV */
+
+/* INI BAGIAN CONTENT */
+
+.content {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray);
+  font-family: var(--Font-primary);
+  font-weight: var(--Font-weight);
+  font-size: 1.5rem;
+  margin-top: 150px;
+  position: relative;
+}
+
+.img-bg .content::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background-image: url("bg.png");
+  height: 300px;
+}
+
+.portfolio .title {
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 2px solid red; */
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.portfolio,
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.menu-card {
+  position: relative;
+}
+
+.menu-card .btn {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: absolute;
+  left: -300px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.menu-card .btn:hover {
+  background-color: #444;
+  color: #000;
+  cursor: pointer;
+}
+/* INI BAGIAN CONTENT */
+#news {
+  float: left;
+}
+#news article {
+  height: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  width: 30%;
+}
+#news article img {
+}
+
+section #komitmen {
+  background-color: #000;
+  width: 100%;
+}
+section #kom {
+  background-color: #000;
+  height: 200px;
+  display: block;
+  width: 500px;
+}
+/* STYLE BAGIAN FOOTER */
+
+footer {
+  min-height: 60px;
+  width: 100%;
+  position: absolute;
+  bottom: -2000px;
+  background-color: var(--color-gray);
+  line-height: 60px;
+}
+
+footer h1 {
+  font-family: var(--Font-primary);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* STYLE BAGIAN FOOTER */
+
+/* MEDIA SCREEN  */
+
+/* INI UNTUK LAPTOP DAN SEJENISNYA */
+@media screen and (max-width: 1440px) {
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav {
+    width: 100%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  nav .ul-Navbar {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 8px;
+    font-size: 2rem;
+  
+  }
+
+  nav .ul-Navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+
+  nav .ulNavbar.active {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  nav {
+    width: 100%;
+  }
+}
